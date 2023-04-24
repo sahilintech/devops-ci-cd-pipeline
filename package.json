@@ -6,7 +6,7 @@
   "scripts": {
     "devStart": "nodemon server.js"
   },
-  "author": "Kh Nishad",
+  "author": "Sahil Chauhan",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.0.2",
