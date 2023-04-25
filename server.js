@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}))
 
 // default city
-var city = 'Himachal Pradesh';
+var city = 'West Bengal';
 app.use(bodyParser.json());
 
 
