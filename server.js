@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 // rendering home page 
 
 app.get('/',function (req,res) {
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=76c8fdc8db07e476c13e988cb7a5690d`;
+    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=71cb9b8affbb8f2ece92ce455af1dc9d`;
 
     request(url , function (error , respone , body) {
      var  weather_json =   JSON.parse(body);
@@ -61,7 +61,7 @@ app.get('/weather2/:city', function (req, res) {
     var city  = req.params.city;
     
     
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=76c8fdc8db07e476c13e988cb7a5690d`;
+    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=71cb9b8affbb8f2ece92ce455af1dc9d`;
 
     request(url, function (error, respone, body) {
         var weather_json = JSON.parse(body);
@@ -113,7 +113,7 @@ app.get('/cel/:city', function (req, res) {
     var city = req.params.city;
     //console.log(city);
     
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=76c8fdc8db07e476c13e988cb7a5690d`;
+    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=71cb9b8affbb8f2ece92ce455af1dc9d`;
 
     request(url, function (error, respone, body) {
         var weather_json = JSON.parse(body);
